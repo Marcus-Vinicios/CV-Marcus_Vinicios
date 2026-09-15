@@ -1,151 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo | Marcus Vinicios F. L. de Oliveira</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Currículum</title>
 </head>
 
 <body>
-    <div id="header">
-        <div id="img">
-            <img
-                src="https://media-exp1.licdn.com/dms/image/D4E35AQGmA5lOeVt5ag/profile-framedphoto-shrink_200_200/0/1643726185283?e=1663426800&v=beta&t=uY_2g0hY5Y_LqChE7ryER3Pgc2sdPOEHjOxW4ZC76VU">
-        </div>
-        <div id="cont">
-            <h3>
-                Marcus Vinicios Florentino
-                <br>Lopes de Oliveira
-            </h3>
+    <div class="resume-wrapper">
+        <header id="header">
+            <div class="header-content">
+                <h1>Marcus Vinicios F. L. de Oliveira</h1>
+                <h2>Desenvolvedor Full Stack | Java, Python & Cloud AWS</h2>
+                <div class="contact-info">
+                    <span>📍 Itu - SP</span>
+                    <span>📞 (11) 97487-7927</span>
+                    <span>✉️ <a href="mailto:marcusv.fl.oliveira@gmail.com">marcusv.fl.oliveira@gmail.com</a></span>
+                    <span>🔗 <a href="https://linkedin.com/in/marcus-oliveira" target="_blank">LinkedIn</a></span>
+                    <span>💻 <a href="https://github.com/Marcus-Vinicios" target="_blank">GitHub</a></span>
+                </div>
+            </div>
+        </header>
+
+        <section class="section summary-section">
+            <h3 class="section-title">Resumo Profissional</h3>
             <p>
-                E-mail: marcusv.fl.oliveira@gmail.com
-                <br>
-                GitHub: <a href="https://github.com/Marcus-Vinicios">Marcus-Vinicios</a>
+                Desenvolvedor Full Stack graduado em <strong>Análise e Desenvolvimento de Sistemas (Fatec Itu)</strong> e capacitado em <strong>Computação em Nuvem (AWS)</strong> pela Escola da Nuvem. Experiência na construção, manutenção e otimização de aplicações web escaláveis, unindo engenharia de software no backend (Java/Spring Boot, Python/Flask, Node.js) a interfaces modernas e reativas no frontend (React.js, Next.js, TypeScript). Domínio em criação e consumo de APIs RESTful, modelagem de bancos de dados relacionais (SQL Server, MySQL, PostgreSQL), testes unitários (Jest, TDD) e arquitetura em nuvem. Atuação pautada em Clean Code, POO, DDD, GitFlow e metodologias ágeis (Scrum/Kanban).
             </p>
+        </section>
+
+        <div class="main-layout">
+            <main class="primary-column">
+                <section class="section">
+                    <h3 class="section-title">Experiência Profissional</h3>
+                    <div class="timeline-item">
+                        <div class="item-header">
+                            <h4>Estagiário de TI (Desenvolvimento Full Stack & Suporte)</h4>
+                            <span class="period">03/2023 – 04/2024</span>
+                        </div>
+                        <p class="company">CIEE - Centro de Integração Empresa-Escola</p>
+                        <ul class="bullet-list">
+                            <li><strong>Backend & APIs:</strong> Atuação no desenvolvimento e sustentação de rotas e microsserviços do sistema "Provas e Atividades Online", garantindo integração fluida via APIs RESTful.</li>
+                            <li><strong>Banco de Dados & Qualidade:</strong> Elaboração e otimização de consultas SQL (MySQL/PostgreSQL) para validação de integridade de dados e suporte a relatórios do sistema.</li>
+                            <li><strong>Qualidade & Agilidade:</strong> Implementação de testes unitários automatizados (Jest), acompanhamento do ciclo de vida das demandas em ritos ágeis (Scrum/Kanban) e versionamento de código com Git.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3 class="section-title">Projetos em Destaque</h3>
+                    <div class="project-item">
+                        <h4>Get-A-Pet <span>(React.js, Node.js, MongoDB, Docker)</span></h4>
+                        <p>Sistema web completo com arquitetura desacoplada, consumo de APIs REST, autenticação de usuários e ambiente conteinerizado via Docker.</p>
+                    </div>
+                    <div class="project-item">
+                        <h4>Quiz-NextJs <span>(Next.js, TypeScript, AWS CloudFront)</span></h4>
+                        <p>Aplicação desenvolvida com foco em alta performance frontend, usabilidade, componentização modular e hospedagem gerenciada na AWS.</p>
+                    </div>
+                </section>
+            </main>
+            
+            <aside class="sidebar-column">
+                <section class="section">
+                    <h3 class="section-title">Competências Técnicas</h3>
+                    <div class="skills-group">
+                        <h5>Backend & Linguagens</h5>
+                        <p>Java (Spring Boot, Spring Data JPA, Hibernate), Python (Flask, FastAPI), Node.js, JavaScript (ES6+), TypeScript, POO, DDD, Clean Code.</p>
+                    </div>
+                    <div class="skills-group">
+                        <h5>Frontend & UI/UX</h5>
+                        <p>React.js, Next.js, HTML5, CSS3, Tailwind CSS, Componentização, React Hooks.</p>
+                    </div>
+                    <div class="skills-group">
+                        <h5>APIs & Banco de Dados</h5>
+                        <p>APIs RESTful, JSON, Microsserviços, SQL Server, PostgreSQL, MySQL, Queries Avançadas.</p>
+                    </div>
+                    <div class="skills-group">
+                        <h5>Cloud, DevOps & Testes</h5>
+                        <p>AWS (EC2, S3, CloudFront), Docker, Git, GitHub, GitFlow, Testes Unitários (Jest, JUnit), TDD.</p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3 class="section-title">Educação & Certificações</h3>
+                    <div class="edu-item">
+                        <h4>Formação Profissional em Computação em Nuvem (AWS)</h4>
+                        <p class="institution">Escola da Nuvem • 2026</p>
+                    </div>
+                    <div class="edu-item">
+                        <h4>Tecnólogo em Análise e Desenvolvimento de Sistemas</h4>
+                        <p class="institution">Fatec Dom Amaury Castanho (Fatec Itu) • 2024</p>
+                    </div>
+                    <div class="edu-item">
+                        <h4>Técnico em Informática para Internet</h4>
+                        <p class="institution">ETEC Martinho Di Ciero • 2020</p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h3 class="section-title">Idiomas</h3>
+                    <ul class="languages-list">
+                        <li><strong>Português:</strong> Nativo</li>
+                        <li><strong>Inglês:</strong> Avançado</li>
+                        <li><strong>Alemão:</strong> Básico</li>
+                    </ul>
+                </section>
+            </aside>
         </div>
-    </div>
-    <div id="container">
-        <div id="content">
-            <h3>Resumo</h3>
-            <ul>
-                <li>
-                    <p>Me chamo Marcus Vinicios Florentinos Lopes de Oliveira.</p>
-                </li>
-                <li>
-                    <p>Formado pela Etec Martinho Di Ciero, no curso Técnico de Técnico em
-                        Informática para Internet, integrado ao Ensino
-                        Médio na escola “E.E Regente Feijó”</p>
-                </li>
-                <li>
-                    <p>Conhecimentos adquiridos durante o curso, para criação de sites, utilizando
-                        tecnologias como: HTML, CSS, PHP.
-                        Manipulação de banco de dados usando MySql. Edição e manipulação de imagens
-                        usando Adobe PhotoShop. Conhecimento
-                        básico em Hardware e conceitos de Software.</p>
-                </li>
-                <li>
-                    <p>Atualmente sou aluno da Fatec Dom Amaury Castanho, cursando Analise e
-                        Desenvolvimento de Sistemas.</p>
-                </li>
-                <li>
-                    <p>Tenho como objetivo me graduar na área de T.I e atuar dentro da mesma, e se
-                        possível dar continuidade ao meu
-                        aprendizado voltado para área.</p>
-                </li>
-            </ul>
-            <h3>Experiências</h3>
-            <ul>
-                <li>
-                    <p>Não possuo experiência profissional dentro da área de T.I, apenas como estudante onde desenvolvi
-                        alguns projetos enquanto estava na ETEC, e outros durante a faculdade. Em resumo possuo o
-                        conhecimento teórico, mas não o pratico em si quando se trata sobre trabalhar como desenvolvedor
-                        ou qualquer outro serviço voltado para a área.</p>
-                </li>
-            </ul>
-            <h3>Formação</h3>
-            <ul>
-                <li>
-                    <p>ETEC Martinho Di Ciero – Técnico
-                        em Informática para Internet Integrado ao Ensino Médio “E.E Regente
-                        Feijó”.(2018-2020)</p>
-                </li>
-                <li>
-                    <p>Fatec Dom Amaury Castanho - Analise e Desenvolvimento de
-                        Sitemas.(2021-2023)</p>
-                </li>
-            </ul>
-            <h3>Cursos</h3>
-            <ul>
-                <li>
-                    <p>
-                        <td>Inglês</td>
-                        <td>CEL - Centro de Estudo de Linguas</td>
-                        <td>- Concluido - (2018)</td>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <td>Inglês</td>
-                        <td>CEMUL - Cemtro Municipal de Linguas</td>
-                        <td>- Incompleto - (2021)</td>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <td>CANVAS – Desenhando seu projeto como negócio</td>
-                        <td>MOOC</td>
-                        <td>- Concluido - (2020)</td>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <td>Figma-Criando interfaces do zero até o protótipo final</td>
-                        <td>Cursae</td>
-                        <td>- Concluido - (2022)</td>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <td>Programação para internet com JavaScript</td>
-                        <td>Digital Inovation One</td>
-                        <td>- Concluido - (2022)</td>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <td>Certificado de HTML</td>
-                        <td>Nerdin Vagas de T.I</td>
-                        <td>- Concluido - (2022)</td>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <td>Certificado de CSS</td>
-                        <td>Nerdin Vagas de T.I</td>
-                        <td>- Concluido - (2022)</td>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <td>Certificado de PHP</td>
-                        <td>Nerdin Vagas de T.I</td>
-                        <td>- Concluido - (2022)</td>
-                    </p>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div id="footer">
-        <p>
-            Todos os diretos reservados&copy;
-            Desenvolvido por Marcus Vinicios&reg;
-        </p>
+        <footer id="footer">
+            <p>&copy; 2026 Marcus Vinicios F. L. de Oliveira. Todos os direitos reservados.</p>
+        </footer>
     </div>
 </body>
 
